@@ -1,5 +1,5 @@
 FROM osrf/ros:noetic-desktop-full
-ARG USERNAME=Student
+ARG USERNAME=ros-student
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -20,7 +20,7 @@ ENV SHELL /bin/bash
 
 RUN pip3 install --upgrade pip
 
-RUN apt-get install -y --allow-unauthenticated python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential git 
+RUN apt-get install -y --allow-unauthenticated python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential git ros-noetic-pilz-industrial-motion 
 
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
