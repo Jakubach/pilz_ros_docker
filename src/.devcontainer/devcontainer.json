@@ -1,11 +1,11 @@
 {
     "name": "ROS 2 Development Container",
     "privileged": true,
-    "remoteUser": "Student",
+    "remoteUser": "ros-student",
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "USERNAME": "Student"
+            "USERNAME": "ros-student"
         }
     },
     "workspaceFolder": "/home/ws",
@@ -33,5 +33,5 @@
         "source=${localWorkspaceFolder}/../cache/noetic/build,target=/home/ws/build,type=bind",
         "source=${localWorkspaceFolder}/../cache/noetic/devel,target=/home/ws/devel,type=bind"
     ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R Student /home/ws/"
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R ros-student /home/ws/"
 }
