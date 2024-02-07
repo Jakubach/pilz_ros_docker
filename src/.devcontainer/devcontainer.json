@@ -1,0 +1,37 @@
+{
+    "name": "ROS 2 Development Container",
+    "privileged": true,
+    "remoteUser": "Student",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USERNAME": "Student"
+        }
+    },
+    "workspaceFolder": "/home/ws",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws/src,type=bind",
+    "customizations": {
+        "vscode": {
+            "extensions":[
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-themes",
+                "twxs.cmake",
+                "donjayamanne.python-extension-pack",
+                "eamodio.gitlens",
+                "ms-iot.vscode-ros"
+            ]
+        }
+    },
+    "remoteEnv": {
+        "DISPLAY": "host.docker.internal:0"
+      },
+    "runArgs": [
+        "-e", "DISPLAY=${env:DISPLAY}",
+        "--gpus=all"
+    ],
+    "mounts": [
+        "source=${localWorkspaceFolder}/../cache/noetic/build,target=/home/ws/build,type=bind",
+        "source=${localWorkspaceFolder}/../cache/noetic/devel,target=/home/ws/devel,type=bind"
+    ],
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R Student /home/ws/"
+}
