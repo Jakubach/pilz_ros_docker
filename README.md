@@ -37,10 +37,9 @@ https://docs.docker.com/desktop/install/windows-install/
 
 ### Running:
 
-#### 1. Download this repository
+#### 1. Run Docker Desktop (into the background)
 
-#### 2. Run Docker Desktop (into the background)
+#### 2. Follow the steps:
 
-#### 3. Run VS Code and follow the steps:
-
+![Alt text](https://i.postimg.cc/tTwv8XS4/instruction.gif)
 
