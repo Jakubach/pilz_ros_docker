@@ -39,5 +39,5 @@ https://docs.docker.com/desktop/install/windows-install/
 
 #### 2. Follow the steps:
 
-![Alt text](https://i.postimg.cc/tTwv8XS4/instruction.gif)
+![Alt text](https://i.postimg.cc/DzNZCdYs/collage.png)
 
