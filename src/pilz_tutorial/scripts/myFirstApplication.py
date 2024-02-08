@@ -7,9 +7,9 @@ __REQUIRED_API_VERSION__ = "1"  # API version
 __ROBOT_VELOCITY__ = 0.5        # velocity of the robot
 
 # main program
-def start_program(r):
+def start_program(r : Robot):
     print(r.get_current_pose()) # print the current position of thr robot in the terminal
-
+    
 if __name__ == "__main__":
     # init a rosnode
     rospy.init_node('robot_program_node')
