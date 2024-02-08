@@ -19,7 +19,17 @@
                 "donjayamanne.python-extension-pack",
                 "eamodio.gitlens",
                 "ms-iot.vscode-ros"
-            ]
+            ],
+            "settings": {
+                "python.analysis.extraPaths": [
+                    "/opt/ros/noetic/lib/python3/dist-packages",
+                    "/home/ws/devel/lib/python3/dist-packages"
+                ],
+                "python.autoComplete.extraPaths": [
+                    "/opt/ros/noetic/lib/python3/dist-packages",
+                    "/home/ws/devel/lib/python3/dist-packages"
+                ]
+            }
         }
     },
     "containerEnv": {
