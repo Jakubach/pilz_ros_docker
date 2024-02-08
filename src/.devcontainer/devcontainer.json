@@ -1,5 +1,5 @@
 {
-    "name": "Pilz ROS Docker",
+    "name": "ROS Noetic Development Container",
     "privileged": true,
     "remoteUser": "ros-student",
     "build": {
