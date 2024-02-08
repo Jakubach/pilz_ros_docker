@@ -13,7 +13,7 @@ https://docs.ros.org/en/humble/How-To-Guides/Setup-ROS-2-with-VSCode-and-Docker-
 
 https://sourceforge.net/projects/vcxsrv/
 
-#### 2. Run Xlaunch Server and setup a display with port 0
+#### 2. Run Xlaunch Server with default settings
 
 Modified files for Windows are available within this repository.
 - Changed `DISPLAY` from X11 to Xlaunch
