@@ -15,9 +15,11 @@ https://sourceforge.net/projects/vcxsrv/
 
 #### 2. Run Xlaunch Server with default settings
 
+<!---
 Modified files for Windows are available within this repository.
 - Changed `DISPLAY` from X11 to Xlaunch
 - Changed GPU access for compatibility with Windows (https://stackoverflow.com/questions/49589229/is-gpu-pass-through-possible-with-docker-for-windows)
+-->
 
 ### VS code
 
