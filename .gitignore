@@ -1,0 +1,7 @@
+# ignore files in folder build and devel
+cache/noetic/build/*
+cache/noetic/devel/*
+
+# but keep the empty folder
+!cache/noetic/devel/.gitkeep
+!cache/noetic/build/.gitkeep
