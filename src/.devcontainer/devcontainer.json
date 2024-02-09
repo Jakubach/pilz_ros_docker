@@ -45,5 +45,5 @@
         "source=${localWorkspaceFolder}/../cache/noetic/build,target=/home/ws/build,type=bind",
         "source=${localWorkspaceFolder}/../cache/noetic/devel,target=/home/ws/devel,type=bind"
     ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/"
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/ && chmod +x /home/ws/src/pilz_tutorial/scripts/myFirstApplication.py"
 }
