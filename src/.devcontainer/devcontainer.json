@@ -8,8 +8,8 @@
             "USERNAME": "ros-student"
         }
     },
-    "workspaceFolder": "/home/ws",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws/src,type=bind",
+    "workspaceFolder": "/home/ros-student/catkin_ws",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ros-student/catkin_ws/src,type=bind",
     "customizations": {
         "vscode": {
             "extensions":[
@@ -23,11 +23,11 @@
             "settings": {
                 "python.analysis.extraPaths": [
                     "/opt/ros/noetic/lib/python3/dist-packages",
-                    "/home/ws/devel/lib/python3/dist-packages"
+                    "/home/ros-student/catkin_ws/devel/lib/python3/dist-packages"
                 ],
                 "python.autoComplete.extraPaths": [
                     "/opt/ros/noetic/lib/python3/dist-packages",
-                    "/home/ws/devel/lib/python3/dist-packages"
+                    "/home/ros-student/catkin_ws/devel/lib/python3/dist-packages"
                 ]
             }
         }
@@ -39,8 +39,8 @@
         "-e", "DISPLAY=${env:DISPLAY}"
     ],
     "mounts": [
-        "source=${localWorkspaceFolder}/../cache/noetic/build,target=/home/ws/build,type=bind",
-        "source=${localWorkspaceFolder}/../cache/noetic/devel,target=/home/ws/devel,type=bind"
+        "source=${localWorkspaceFolder}/../cache/noetic/build,target=/home/ros-student/catkin_ws/build,type=bind",
+        "source=${localWorkspaceFolder}/../cache/noetic/devel,target=/home/ros-student/catkin_ws/devel,type=bind"
     ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R ros-student /home/ws/"
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R ros-student /home/ros-student/catkin_ws/"
 }
