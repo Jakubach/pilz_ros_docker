@@ -1,45 +1,63 @@
 # Configuration of ROS2 (GUI) inside Docker with VSCode
 
-## Ubuntu 
+## Installation
 
-Ubuntu guide is in official documentation:
-https://docs.ros.org/en/humble/How-To-Guides/Setup-ROS-2-with-VSCode-and-Docker-Container.html
+<details>
+<summary><b> Windows </b></summary>
+   
+1. &nbsp; Download XLaunch Server from https://sourceforge.net/projects/vcxsrv/ and install.
+2. &nbsp; Download Docker Desktop from https://docs.docker.com/desktop/install/windows-install/ and install.
+3. &nbsp; Download Visual Studio Code from https://code.visualstudio.com/download and install.
+4. &nbsp; Open VS Code and install an extension (shortcut CTRL+SHIFT+X) with the name "Remote Development".
+5. &nbsp; Download [repository](https://github.com/Jakubach/pilz_ros_docker):\
+  a) &nbsp; in web browser:\
+     &nbsp; &nbsp; &nbsp; click a button `Code --> Download ZIP` and unzip,\
+  b) &nbsp; or in the Command Window:\
+     &nbsp; &nbsp; &nbsp; use command: &nbsp; `git clone https://github.com/Jakubach/pilz_ros_docker.git`
 
-## Windows
+</details>
 
-### XLaunch Server for displaying GUI
 
-#### 1. Install Xlaunch Server for displaying GUI:
+<details>
+<summary><b>Ubuntu </b></summary>
 
-https://sourceforge.net/projects/vcxsrv/
+1. &nbsp; Download Docker Engine, instruction: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+2. &nbsp; Optionally, you can follow a post-installation steps from Docker documentation:\
+   &nbsp; https://docs.docker.com/engine/install/linux-postinstall/
+3. &nbsp; Download and install Visual Studio Code with command: &nbsp; `sudo apt-get install code`
+4. &nbsp; Open VS Code and install an extension (shortcut CTRL+SHIFT+X) with the name "Remote Development".
+5. &nbsp; Download [repository](https://github.com/Jakubach/pilz_ros_docker):\
+  a) &nbsp; in web browser:\
+     &nbsp; &nbsp; &nbsp; change branch to Ubuntu, click a button `Code --> Download ZIP`, unzip,\
+  b) &nbsp; or in the Terminal:\
+     &nbsp; &nbsp; &nbsp; use command: &nbsp; `git clone https://github.com/Jakubach/pilz_ros_docker.git -b Ubuntu`
 
-#### 2. Run Xlaunch Server with default settings
+</details>
 
-<!---
-Modified files for Windows are available within this repository.
-- Changed `DISPLAY` from X11 to Xlaunch
-- Changed GPU access for compatibility with Windows (https://stackoverflow.com/questions/49589229/is-gpu-pass-through-possible-with-docker-for-windows)
--->
+## Running ROS
 
-### VS code
+<details>
+<summary><b> Windows </b></summary>
 
-#### 1. Install VS Code:
-
-https://code.visualstudio.com/download
-
-#### 2. Within VS Code search in Extensions (CTRL+SHIFT+X) for the "Remote Development" extension and install it.
-
-### Docker
-
-#### Install Docker Desktop:
-
-https://docs.docker.com/desktop/install/windows-install/
-
-### Running:
-
-#### 1. Run Docker Desktop (into the background)
-
-#### 2. Follow the steps:
+1. &nbsp; Run XLaunch Server with default settings.
+2. &nbsp; Run Docker Desktop (in the background).
+3. &nbsp; Run VS Code and open a directory `pilz_ros_docker/src`, follow the bellow screen.
 
 ![Alt text](https://images2.imgbox.com/81/14/L3HKlegP_o.png)
 
+The first time you run it, you may need to wait a little longer for the necessary software to download and install.
+
+</details>
+
+
+<details>
+<summary><b>Ubuntu </b></summary>
+
+1. &nbsp; Run Docker Engine with command `sudo systemctl start docker` (may not be necessary).
+2. &nbsp; Run VS Code and open a directory `pilz_ros_docker/src`, follow the bellow screen.
+
+![Alt text](https://images2.imgbox.com/81/14/L3HKlegP_o.png)
+
+The first time you run it, you may need to wait a little longer for the necessary software to download and install.
+
+</details>
