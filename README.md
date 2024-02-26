@@ -1,4 +1,4 @@
-# Configuration of ROS2 (GUI) inside Docker with VSCode
+# Configuration of ROS (GUI) inside Docker with VSCode
 
 ## Installation
 
