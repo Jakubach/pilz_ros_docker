@@ -37,6 +37,7 @@
       },
     "runArgs": [
         "--net=host",
+        "--ipc=host",
         "-e", "DISPLAY=${env:DISPLAY}"
     ],
     "mounts": [
